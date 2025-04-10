@@ -17,7 +17,7 @@ public class BookDAO {
         String query = "INSERT INTO books (title, author_id, available) VALUES (?, ?, ?)";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             ps.setString(1, book.getTitle());
-            ps.setInt(2, book.getAuthor().getId()); // Используем ID автора
+            ps.setInt(2, book.getAuthor().getId());
             ps.setBoolean(3, book.isAvailable());
             ps.executeUpdate();
         }
@@ -30,7 +30,7 @@ public class BookDAO {
              ResultSet resultSet = statement.executeQuery(query)) {
             while (resultSet.next()) {
                 int authorId = resultSet.getInt("author_id");
-                Author author = new AuthorDAO(connection).findById(authorId); // Получаем автора по ID
+                Author author = new AuthorDAO(connection).findById(authorId); 
                 Book book = new Book(resultSet.getInt("id"), resultSet.getString("title"), author, resultSet.getBoolean("available"));
                 books.add(book);
             }
@@ -45,7 +45,7 @@ public class BookDAO {
             try (ResultSet resultSet = ps.executeQuery()) {
                 if (resultSet.next()) {
                     int authorId = resultSet.getInt("author_id");
-                    Author author = new AuthorDAO(connection).findById(authorId); // Получаем автора по ID
+                    Author author = new AuthorDAO(connection).findById(authorId);
                     return new Book(resultSet.getInt("id"), resultSet.getString("title"), author, resultSet.getBoolean("available"));
                 }
             }
@@ -57,7 +57,7 @@ public class BookDAO {
         String query = "UPDATE books SET title = ?, author_id = ?, available = ? WHERE id = ?";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             ps.setString(1, book.getTitle());
-            ps.setInt(2, book.getAuthor().getId()); // Используем ID автора
+            ps.setInt(2, book.getAuthor().getId()); 
             ps.setBoolean(3, book.isAvailable());
             ps.setInt(4, book.getId());
             ps.executeUpdate();
