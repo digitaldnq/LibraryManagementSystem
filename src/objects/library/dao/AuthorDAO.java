@@ -21,7 +21,7 @@ public class AuthorDAO {
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 int generatedId = rs.getInt("id");
-                author.setId(generatedId);  // Вот тут мы возвращаем ID в объект
+                author.setId(generatedId);  
             }
         }
     }
