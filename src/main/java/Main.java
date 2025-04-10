@@ -112,8 +112,8 @@ public class Main {
                                 LocalDate returnDate = returnDateInput.isEmpty() ? null : LocalDate.parse(returnDateInput);
                                 Borrowing borrowing = new Borrowing(0, user, book, LocalDate.now(), returnDate);
                                 borrowingDAO.save(borrowing);
-                                book.setAvailable(false); // Изменить статус книги на недоступную
-                                bookDAO.update(book); // Сохранить изменения в БД
+                                book.setAvailable(false);
+                                bookDAO.update(book); 
                                 System.out.println("Книга выдана: " + borrowing);
                             }
                         }
