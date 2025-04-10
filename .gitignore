@@ -1,0 +1,15 @@
+.idea/
+
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/dataSources/
+.idea/workspace.xml
+.idea/vcs.xml
+
+/target/
+
+*.iml
+.DS_Store
+Thumbs.db
+
+src/main/resources/db.properties
