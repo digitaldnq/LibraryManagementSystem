@@ -2,9 +2,13 @@
 ## Это консольное приложение, т.е. оно запускается только с помощью консоли среды разработки.
 # Необходимое для запуска проекта
 Шаг 1: установите JDK 21 - https://www.oracle.com/cis/java/technologies/downloads/#java21
+
 Шаг 2: установите среду разработки, например - Intellij Idea, NetBeans IDE, Eclipse.
+
 Шаг 3: подключите Maven к проекту в Intellij Idea или установите Maven - https://maven.apache.org/install.html, а также проверьте pom.xml файл на корректность.
+
 Шаг 4: установите Postgresql - https://www.postgresql.org/download/, а также драйвер pgJDBC - https://jdbc.postgresql.org.
+
 Шаг 5: после установки Postgresql запустите pgAdmin 4 и подключитесь к серверу (нажать на Servers), затем нужно будет ввести пароль, который был указан при установки, и создать БД назвав ее library.
 
 ![image](https://github.com/user-attachments/assets/b41e1f35-b1af-4495-9aa7-ca1b8c49275b)
@@ -14,8 +18,10 @@
 ![image](https://github.com/user-attachments/assets/de9a87d1-538a-48e1-8b16-56c24fce46ff)
 
 Шаг 7: после установки связи в консоли БД создаем новые таблицы "authors", "books", "users", "borrowings" и указываем необходимые настройки
+
 Шаг 8: в папке "recources" будут находиться данные для подключения к вашей БД, "url, user, password". Необходимо обязательно указать свои данные, иначе проект будет работать некорректно.
-Шаг 9: в пакете util есть файл TestConnection, благодаря нему вы сможете проверить подключение вашей БД.
+
+Шаг 9: в пакете util есть файл TestConnection, благодаря нему вы сможете проверить подключение вашей БД./n
 Шаг 10: Импортируйте все классы в свою среду разработки и запускайте проект в файле "Main".
 
 # Меню интерфейса
