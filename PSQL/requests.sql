@@ -1,4 +1,4 @@
-# Для вывода всех авторов и их книг
+-- Для вывода всех авторов и их книг
 
 SELECT 
     a.id AS author_id,
@@ -10,7 +10,7 @@ FROM authors a
 LEFT JOIN books b ON a.id = b.author_id
 ORDER BY a.id, b.id;
 
-# Для вывода всех пользователей и их заимствования
+-- Для вывода всех пользователей и их заимствования
 
 SELECT 
     u.id AS user_id,
