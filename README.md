@@ -6,9 +6,11 @@
 Шаг 3: подключите Maven к проекту в Intellij Idea или установите Maven - https://maven.apache.org/install.html, а также проверьте pom.xml файл на корректность.
 Шаг 4: установите Postgresql - https://www.postgresql.org/download/, а также драйвер pgJDBC - https://jdbc.postgresql.org.
 Шаг 5: после установки Postgresql запустите pgAdmin 4 и подключитесь к серверу (нажать на Servers), затем нужно будет ввести пароль, который был указан при установки, и создать БД назвав ее library.
+
 ![image](https://github.com/user-attachments/assets/b41e1f35-b1af-4495-9aa7-ca1b8c49275b)
 
 Шаг 6: после создание БД привяжем ее к Intellij Idea, в правом углу нажмите на значок Database, откроется мини-окно в нем New -> Postgresql -> указываете ваши данные в необходимых полях.
+
 ![image](https://github.com/user-attachments/assets/de9a87d1-538a-48e1-8b16-56c24fce46ff)
 
 Шаг 7: после установки связи в консоли БД создаем новые таблицы "authors", "books", "users", "borrowings" и указываем необходимые настройки
@@ -22,10 +24,13 @@
 В разделе "Пользователи" добавить нового пользователя, а также показать весь список пользователей.
 В разделе "Заимствование" выдать книгу, показать все заимствование и вернуть книгу.
 При завершении работы можно будет совершить выход (написать 0).
+
 ![image](https://github.com/user-attachments/assets/0f2e9b51-4bb0-4204-a44e-d58c9833ae55)
 
 # Все записанные материалы сохранятся в вашей БД.
+
 ![image](https://github.com/user-attachments/assets/697cb63b-09d1-40f3-a05e-8c86ba1b51d2)
+
 ![image](https://github.com/user-attachments/assets/33e8fee5-dd7e-4c00-9e31-d547eb3b620c)
 
 
